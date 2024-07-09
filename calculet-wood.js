@@ -19,5 +19,5 @@ function calculation(chairQuantity, tableQuantity, bedQuantity) {
     const totalCft = totalChairCft + totalBedCft + totalTableCft;
     return totalCft;
 }
-const pich = calculation(1, 1, 1)
+const pich = calculation(12, 5, 2)
 console.log(pich);
