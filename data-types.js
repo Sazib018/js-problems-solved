@@ -1,4 +1,8 @@
+
+
 const country = 'Bangladesh';
+
+
 const age = 23;
 const isIndependent = true;
 const friends = ['sazib','mahfuj','noyon','shakil'];
