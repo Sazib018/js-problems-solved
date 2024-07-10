@@ -8,7 +8,7 @@ const products =[
     {name:'shoes', color:'gray', size: '42', price: 60, quantity: 6}
   
 ]
-let totalPrice = 0;
+/* let totalPrice = 0;
 
 for (let i = 0; i < products.length; i++) {
     const object = products[i];
@@ -18,4 +18,21 @@ for (let i = 0; i < products.length; i++) {
     totalPrice = totalPrice + objectTotalPrice;
     
 }
-console.log(totalPrice);
+console.log(totalPrice); */
+
+// another way
+
+function totalCost(arrayOfObject) {
+    let totalPrice =0;
+    for (let i = 0; i < arrayOfObject.length; i++) {
+        const object = arrayOfObject[i];
+        const objectPrice = object.price;
+        const objectQuantity = object.quantity;
+        const objectTotalPrice = objectQuantity * objectPrice;
+        totalPrice = totalPrice + objectTotalPrice;
+        
+    }
+    return totalPrice;
+}
+const total = totalCost(products)
+console.log(total);
