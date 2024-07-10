@@ -20,16 +20,16 @@ function calculation(tricketQuantity) {
     }
 
     else if (tricketQuantity <=200) {
-        const moreThen100 = tricketQuantity -100;
         const first100Price = 100 * first100;
+        const moreThen100 = tricketQuantity -100;
         const second100Price = moreThen100 * second100;
         const totalPrice = second100Price + first100Price;
         return totalPrice;
     }
     else{
-        const moreThen200 = tricketQuantity - 200;
         const first100Price = 100 * first100;
         const second100Price = 100 * second100;
+        const moreThen200 = tricketQuantity - 200;
         const third100Price = moreThen200 * third100;
         const totalPrice = first100Price + second100Price + third100Price;
         return totalPrice;
